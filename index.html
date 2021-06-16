@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+main{
+    position:relative;
+    top:0;
+    left:0;
+    background:green;
+    height:100vh;
+    width:100vw;
+    background-image: linear-gradient(128deg, rgba(10, 10, 10,0.06) 0%, rgba(10, 10, 10,0.06) 50%,rgba(193, 193, 193,0.06) 50%, rgba(193, 193, 193,0.06) 100%),linear-gradient(51deg, rgba(231, 231, 231,0.06) 0%, rgba(231, 231, 231,0.06) 50%,rgba(39, 39, 39,0.06) 50%, rgba(39, 39, 39,0.06) 100%),linear-gradient(90deg, hsl(216,75%,70%),hsl(216,75%,70%)); background-size: 56px 56px;
+}
+.cmain{
+    height:80vh;
+    width:60vw;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color:pink;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 0 1vmin 1vmin #0002;
+}
+#back{
+    background-color:#183440;
+}
+.c{
+    height:33.3%;
+    width:100%; 
+    border:2px solid white;
+}
+
+.c2{
+    display:grid;
+    place-items:center;
+    text-align:center;
+    background-color:#59CFF3;
+    color:#183440;
+    font-size:2rem;
+    font-weight:900;
+    font-family:"Iceberg";
+    overflow:hidden;
+    background-image: radial-gradient(circle at center center, rgba(56, 69, 253,0.15) 0%, rgba(56, 69, 253,0.15) 84%,transparent 84%, transparent 100%),linear-gradient(90deg, hsl(195,97%,72%),hsl(195,97%,72%)); background-size: 26px 26px;
+}
+.c1{
+    background-image:url("https://api.sololearn.com/Uploads/Avatars/18694154.jpg");
+    background-size:100% 100%;
+}
+.c3{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAZccFLkN48JqMW7u8XCp7rAZ1RqHqLqdMmg&usqp=CAU");
+    background-size:100% 100%;
+}
+.back{
+    background-image: repeating-linear-gradient(135deg, rgb(2,39,51) 0px, rgb(2,39,51) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(2,39,51) 0px, rgb(2,39,51) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+    display:grid;
+    place-items:center;
+}
+.box{
+    height:90%;
+    width:100%;
+    background-color:#183440;
+    padding:10px;
+    overflow:scroll;
+    color:white;
+    font-weight:300;
+    font-family:"iceberg";
+}
+    </style>
+    <audio controls style=" display:none;" loop   id="a"  >
+ <source id="audio" src="https://www.dropbox.com/s/9k2d8lkxgnihkwd/y2mate.com%20-%20buddhu%20sa%20mann%20%20kapoor%20%20sons%20%20sidharth%20%20alia%20%20fawad%20%20rishi%20kapoor%20%20armaan%20%20amaal.mp3?dl=1">
+    <script>
+     Swal.fire('Happy birthday Doodler Bhaiya🎊\n A small try🧗‍♀️ to express my gratitude🤗 \n It is quite simple😕 and boring😥 as I am a beginner😔 Sorry bhaiya due to few issues couldnt make it to your bday but aakr party wasooloongi 😁')
+        </script>  
+      </audio> 
+        <main>
+            <div class="cmain back" id="back">
+                <div class="box">
+                    <p>
+                        I smile😊 because you’re my brother🧑. I laugh😄 because there’s nothing you can do about it😅<br><br> Happy birthday 🎂  doodler bhaiya 🎊 May all your wishes comes true and you have a never ending smile on your face forever 😊 
+Wishing you lots of happiness 😊 and joy and yeah lots of maggi 🍜 chocolate 🍫 and ice creams 🍦<br><br> Thankkkkkk youuuu sooooooo muchhhh bhaiyaaa for brightening my world and being an important part of my life. I don’t think I could ever tell you how much you mean to me. I can’t imagine what things would be like if I hadn’t met you.<br><br>Waiting for a huge maggi 🍜 party from you😊😊 Enjoy your day bhaiya 😇😇
+
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="cmain" id="front" onclick="card()">
+                <div class="c c1"></div>
+                <div class="c c2"><P id="hbd">
+                    HAPPY BIRTHDAY DOODLER BHAIYA
+                </P></div>
+                <div class="c c3"></div>
+            </div>
+            
+        </main>
+        <script>
+            function card(){
+    var card1 = document.getElementById('front');
+    var card2 = document.getElementById('back');   
+    card1.style.width="40vw";
+    card1.style.left="25vw";
+    card1.style.transition="2s linear";
+    card2.style.width="50vw";
+    card2.style.left="70vw";
+    card2.style.transition="2s linear";
+    
+}
+window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+        </script>
+    </body>
+</html>
